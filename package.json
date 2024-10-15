@@ -3,24 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon server/index.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "express": "^4.21.1",
+    "next": "14.2.15",
+    "next-redux-wrapper": "^8.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.15"
+    "react-redux": "^9.1.2",
+    "socket.io": "^4.8.0",
+    "socket.io-client": "^4.8.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/express": "^5.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
   }
 }
